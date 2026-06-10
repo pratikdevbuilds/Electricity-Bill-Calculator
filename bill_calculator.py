@@ -1,19 +1,18 @@
-amount = int(input("Enter amount: "))
+get_unit=int(input("enter units : "))
+if get_unit>100:
+  f_100= get_unit-100
+  pyment=100*5
+  if f_100>100:
+    re_100 =f_100-100
+    pyment=pyment+(100*7)
+    if re_100>0:
+     pyment=pyment+(re_100*10)
 
-balance 
-if  amount >0:
-  
-  balance=balance+amount
-  print("added balance:",balance)
+  else:
+    pyment=pyment+(f_100*7)
 
 else:
-  if balance<0:
-   print(" balance can not Debited according to  your requirement \n Fristly you need to credit balance\n Check balance right now\n Thank You")
-  else:
-    balance-=amount
-    print("total balance :",balance)
-  
+  pyment=get_unit*5
+ 
 
-print("total balance :",balance)
-
-  
+print(f"TOTAL AMOUNT = {pyment} /-")
